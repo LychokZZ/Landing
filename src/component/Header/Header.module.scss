@@ -1,0 +1,35 @@
+.HeaderContainer{
+    height: 13vh;
+    width: 100vw;
+    background-color: $Background;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ButtonSwitch{
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    color: $MainText;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        color: $AnyText;
+    }
+}
+.Logo{
+    width: 80px;
+    height: 80px;
+    background-color: $MainText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: $Background;
+}
