@@ -1,5 +1,97 @@
 .InfoContainer{
     width: 100vw;
-    height: 50vh;
-    background-color: $SecondBAck;
+    height: 60vh;
+    background-color: $MainText;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.InfoTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+    height: 80%;
+    color: $Background;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 200px;
+}
+.BaseInfoText{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.InfoRoll{
+    margin-left: 10%;
+    width: 40%;
+    height: 30%;   
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative
+    
+}
+.SmallText{
+    color: $AnyText;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.BigText{
+    color: $Background;
+    font-size: 75px;
+}
+
+.FirstRoll{
+    position: absolute;
+    margin-top: -32%;
+}
+.SecondRoll{
+    position: absolute;
+    margin-top: -20px;
+}
+.ThreetRoll{
+    position: absolute;
+    margin-top: 20%;
+}
+
+.SwapAnimation{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: Swap 10s infinite ease-in-out;
+}
+
+@keyframes Swap {
+    0% {
+        transform: translateY(250%);
+    }
+    6%{
+        transform: translateY(150%);
+    }
+    30% {
+        transform: translateY(150%);
+    }
+    36% {
+        transform: translateY(30%);
+    }
+    60%{
+        transform: translateY(30%);
+    }
+    66% {
+        transform: translateY(-65%);
+    }
+    96% {
+        transform: translateY(-65%);
+    }
+    100%{
+        transform: translateY(-150%);
+    }
 }
