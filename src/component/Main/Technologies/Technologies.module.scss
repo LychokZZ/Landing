@@ -1,5 +1,35 @@
-.TechnologiesContainer{
+.TechnologiesContainer {
     width: 100vw;
     height: 60vh;
     background-color: $Background;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.TechnologyItem {
+    flex-shrink: 0;
+    width: 25vw;
+    height: 45vh;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: $Background;
+    border-radius: 5px;
+    color: $Background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    white-space: wrap;
+    border: solid 1px $MainText;
+}
+.Title{
+    color: $AnyText;
+}
+.Description{
+    color: $MainText;
 }
