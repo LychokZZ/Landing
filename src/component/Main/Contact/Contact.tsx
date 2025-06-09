@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className={s.AreaBut}>
-                    <textarea className={s.AreaInput} value={form.Message} onChange={(e) => setForm(prev => ({ ...prev, Message: e.target.value }))} placeholder='What you interest?'> placeholder="Write your message ..."></textarea>                    
+                    <textarea className={s.AreaInput} value={form.Message} onChange={(e) => setForm(prev => ({ ...prev, Message: e.target.value }))} placeholder='What you interest?'></textarea>                    
                     <button onClick={()=>Submitte()} className={s.ButtonContact}>Contact</button>
                 </div>
             </div>
