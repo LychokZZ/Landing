@@ -1,6 +1,8 @@
 'use client';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import s from './Technologies.module.scss';
+
+import Card from './Card/Card';
 
 const Technologies = () =>{
     const [Technologies, setTechnologies] = useState(
@@ -32,15 +34,39 @@ const Technologies = () =>{
         ]
 
     )
+
+    const [isVisible, setIsVisible] = useState(0);
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    const isVisibleHandler = (index: number) => {
+        setIsVisible(index);
+    }
+
+    const scrollTos = (scrolpx:number) => {
+        console.log(scrolpx);
+        if (scrollRef.current) {
+            scrollRef.current.scrollTo({
+                left: scrolpx, 
+                behavior: 'smooth',
+            });
+        }
+    }
     return (
-        <section className={s.TechnologiesContainer} >
-                {Technologies.map((item, index) => (
-                    <div className={s.TechnologyItem} key={index}>
-                        <h1 className={s.Title}>{item.title}</h1>
-                        <p className={s.Description}>{item.description}</p>
-                    </div>
-                ))}
-        </section>
+        <div>
+            <h3 className={s.CardCounter}>0{isVisible+1}/06</h3>
+            <section ref={scrollRef} className={s.TechnologiesContainer} >
+                
+                    {Technologies.map((item, index) => (
+                        <div key={index}>
+                            
+                            {isVisible === index ? 
+                            <Card item = {item} index = {index} visibilitty = {true} isVisibleHandler ={isVisibleHandler} scrollTos = {scrollTos}/>
+                            :  
+                            <Card item = {item} index = {index} visibilitty = {false} isVisibleHandler ={isVisibleHandler} scrollTos = {scrollTos}/>}
+                        </div>
+                    ))}
+            </section>
+        </div>
     )    
 }
 

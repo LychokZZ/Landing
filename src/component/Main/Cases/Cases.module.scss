@@ -1,0 +1,124 @@
+.CasesContainer{
+    width: 100vw;
+    height: 80vh;
+    background-color: $Background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.CaseItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CaseItemVisible{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.CaseTextContainer{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: $MainText;
+    padding: 30px;
+    
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.CaseTitle{
+
+    font-size: 6vh
+}
+.CaseStack{
+    margin-bottom: 20px;
+    font-size: 3vh;
+    color: $AnyText;
+}
+.CaseDescription{
+
+}
+.CaseButton{
+    margin: 4%;
+    width: 90%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: $Background;
+    background-color: $MainText;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.SkipIcon{
+    width: 5vh;
+    height: 5vh;
+}
+
+.PrevButton{
+    width: 5vw;
+    height: 60vh;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: $Background;
+    background-color: $MainText;
+    border-radius: 0px 5px 5px 0px;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.NextButton{
+    width: 5vw;
+    height: 60vh;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: $Background;
+    background-color: $MainText;
+    border-radius: 5px 0px 0px 5px; 
+    &:hover{
+        transform: scale(1.05);
+
+    }
+}
+.CaseCounter{
+    font-size: 30px;
+    margin-left: 67vw;
+    margin-top: -70vh;
+    position: absolute;
+    z-index: 5;
+    color: $MainText;
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.DesignLine{
+    position: absolute;
+    background-color: #404040;
+    width: 40vw;
+    height: 400vh;
+    z-index: 1;
+    opacity: 0.1;
+    rotate: -60deg;
+    margin-top: 10%;
+
+}
+.ImageCases{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
