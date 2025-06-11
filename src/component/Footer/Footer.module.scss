@@ -1,0 +1,23 @@
+.Footers{
+    width: 200px;
+    width: 100vw;
+    background-color: $MainText;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ButtonClick{
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: $Background;
+    padding: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        background-color: rgb(64, 64, 64);
+    }
+}

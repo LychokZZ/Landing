@@ -7,6 +7,7 @@ import Cases from "@/component/Main/Cases/Cases";
 import Contact from "./Contact/Contact";
 
 import s from './Main.module.scss';
+import Footer from "../Footer/Footer";
 
 
 const Main = () =>{
@@ -20,6 +21,7 @@ const Main = () =>{
             <footer>
                 <Contact />
             </footer>
+            <Footer />
         </main>
     )    
 }
