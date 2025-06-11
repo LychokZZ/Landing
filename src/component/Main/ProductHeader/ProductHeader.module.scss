@@ -56,3 +56,16 @@
   margin: 10px;
   margin-left: 15%;
 }
+
+@media (max-width: 1080px) {
+  .View{
+    display: none;
+  }
+
+  
+}
+@media (max-width: 780px) {
+    .ProductHeaderContainer{
+  height: 50vh;
+}
+}

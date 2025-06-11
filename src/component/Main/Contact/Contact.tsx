@@ -10,8 +10,29 @@ const Contact = () => {
         Interes: '',
         Message: '',
     })
+    const [Ready,setReady] = useState(false)
+    const [load , setLoad] = useState(true)
+
+    const Revie = async() => {
+        const res = await fetch('https://landingserver-lag0.onrender.com/contact',{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ Fullname : form.Fullname , Email: form.Email ,Country: form.Country, Interes: form.Interes , Message: form.Message }),
+            })
+    }
+    const waint = () => {
+        setLoad(true)
+        setTimeout(()=>{
+            setReady(true)
+            setLoad(true)
+        },90000)
+        alert('Please wait start server. It deploy on render and have sleep time , please waint 90 seconds)')
+    }
 
     const Submitte =() => {
+        Revie()
         alert('Thank you, we will contact you soon.')
         setForm({
             Fullname : '',
@@ -20,6 +41,7 @@ const Contact = () => {
             Interes: '',
             Message: '',
         })
+
     }
     return (
         <div className={s.ContactContainer}>
@@ -40,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div className={s.AreaBut}>
                     <textarea className={s.AreaInput} value={form.Message} onChange={(e) => setForm(prev => ({ ...prev, Message: e.target.value }))} placeholder='What you interest?'></textarea>                    
-                    <button onClick={()=>Submitte()} className={s.ButtonContact}>Contact</button>
+                    {Ready ?<button onClick={()=>Submitte()} className={s.ButtonContact}>Contact</button> : <button onClick={()=>waint()} className={load ? s.ButtonContact : s.ButtonContactWait}>I'm ready</button>}
                 </div>
             </div>
         </div>

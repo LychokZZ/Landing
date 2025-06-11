@@ -35,11 +35,13 @@ const ProductHeader = () => {
         <AdditionalText />
       </div>
 
-      <div className={`${s.Foreground} ${isActive ? s.active : ''}`}>
-        <div className={s.TextContainer}>
-          <h1 className={s.Professional}>Professional</h1>
-          <h1 className={s.Software}>Software</h1>
-          <h1 className={s.Development}>Development</h1>
+      <div className={s.View}>
+        <div className={`${s.Foreground} ${isActive ? s.active : ''}`}>
+          <div className={s.TextContainer}>
+            <h1 className={s.Professional}>Professional</h1>
+            <h1 className={s.Software}>Software</h1>
+            <h1 className={s.Development}>Development</h1>
+          </div>
         </div>
       </div>
     </div>

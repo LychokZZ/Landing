@@ -34,8 +34,6 @@
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    
-    
 }
 .SmallText{
     color: $AnyText;
@@ -48,4 +46,34 @@
 .BigText{
     color: $Background;
     font-size: 75px;
+}
+@media (max-width: 880px) {
+    .BaseInfoText{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 780px) {
+    .InfoTextContainer{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: -10%;
+    }
+    .BaseInfoText{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .BigText{
+        font-size: 50px;
+    }
+    .InfoContainer{
+        flex-direction: column;
+    }
+    .InfoRoll{
+        width: 100%;
+        margin-top: -40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

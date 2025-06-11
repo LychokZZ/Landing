@@ -1,3 +1,4 @@
+
 import Header from "@/component/Header/Header";
 import ProductHeader from "@/component/Main/ProductHeader/ProductHeader";
 import Info from "@/component/Main/Info/Info";
@@ -6,6 +7,7 @@ import Cases from "@/component/Main/Cases/Cases";
 import Contact from "./Contact/Contact";
 
 import s from './Main.module.scss';
+
 
 const Main = () =>{
     return (

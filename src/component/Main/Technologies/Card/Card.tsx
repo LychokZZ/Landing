@@ -42,10 +42,10 @@ const Card:FC<props> = ({item,visibilitty, index ,scrollTos,isVisibleHandler}) =
             <button  onClick={()=>{isVisibleHandler(index); scrollTos?.(
                     index === 0 ? 1
                 : index === 1 ? 1
-                : index === 2 ? 300 
+                : index === 2 ? 400 
                 : index === 3 ? 700 
-                : index === 4 ? 1000 
-                : index === 5 ? 1000
+                : index === 4 ? 1600 
+                : index === 5 ? 2000
                 : 1
             )}} className={s.TechnologyItemShow}>
                     <h1 className={s.Title}>{item.title}</h1>

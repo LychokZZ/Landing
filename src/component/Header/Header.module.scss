@@ -9,7 +9,7 @@
 .ButtonSwitch{
     background-color: transparent;
     border: none;
-    width: 100px;
+    width: 90px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -32,4 +32,10 @@
     align-items: center;
     border-radius: 5px;
     color: $Background;
+}
+
+@media (max-width: 780px) {
+    .Logo{
+        display: none;
+    }
 }

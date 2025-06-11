@@ -26,6 +26,7 @@
     width: 100vw;
     height: 87vh;
     position: relative;
+    
 }
 
 
@@ -95,4 +96,63 @@
 .Development {
   margin: 10px;
   margin-left: 15%;
+}
+
+@media (max-width: 1080px) {
+
+    .TextContainer{
+        font-size: 6vw;
+    }
+
+    .BackWord{
+        font-size: 5vw;
+        filter: blur(4px);
+    }
+    .TextContainer {
+        align-items: flex-start;
+    }
+    .Professional {
+        margin: 10px;
+    }
+    .Software {
+        margin: 10px;
+    }
+    .Development {
+        margin: 10px;
+    }
+    .fullstack{
+        margin-left: 60vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .AddirionalTextContainer{
+        height: 50vh;
+    }
+    .TextContainer{
+        height: 50vh;
+    }
+
+    .fullstack{
+        margin-top: 25vh;
+    }
+    .product{
+        margin-top: 15vh;
+    }
+    .design{
+        margin-top: 35vh;
+    }
+    .web{
+        margin-top: 40vh;
+    }
+    .qa{
+        margin-top: 10vh;
+    }
+    .dev{
+        margin-top: 30vh;
+    }
+
+    .BackWord{
+        filter: blur(4px);
+    }
 }

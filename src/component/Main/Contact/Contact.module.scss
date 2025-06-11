@@ -2,9 +2,9 @@
     width: 100vw;
     height: 80vh;
     background-color: $MainText;
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-top: 10%;
+    padding-left: 100px;
+    padding-right: 100px;
 
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -17,11 +17,11 @@
     align-items: center;
 }
 .Introduction{
-    font-size: 50px;
+    font-size: 40px;
     width: 100vw;
 }
 .ContactForm{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +31,7 @@
     
 }
 .ContactDiscription{
-
+    width: 90vw
 }
 
 .NameInput{
@@ -99,7 +99,7 @@
     align-items: center;
 }
 .AreaInput {
-  width: 91.5%;
+  width: 85%;
   height: 10ch;
   padding: 30px;
   background-color: transparent;
@@ -125,7 +125,7 @@
     border: none;
     background-color: $AnyText;
     margin-top: 40px;
-    margin-left: 75%;
+    margin-left: 80%;
     box-shadow: 0px 0px 30px rgba(86, 228, 230, 0.4);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -133,5 +133,68 @@
     &:hover{
         transform: scale(1.2);
         box-shadow: 0px 0px 2px rgba(86, 228, 230, 0.4);
+    }
+}
+
+
+.ButtonContactWait{
+    position: absolute;
+    width: 10ch;
+    height: 10ch;
+    border-radius: 50%;
+    border: none;
+    background-color: $AnyText;
+    margin-top: 40px;
+    margin-left: 80%;
+    box-shadow: 0px 0px 30px rgba(86, 228, 230, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    &:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 2px rgba(86, 228, 230, 0.4);
+    }
+
+
+}
+@keyframes rio {
+    0% {
+        
+    }
+}
+@media (max-width: 710px) {
+    .Introduction{
+        font-size: 30px;
+        margin-left: 20%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .InfoContact{
+        flex-direction: column;
+    }
+    .ContactForm{
+        margin-left: -22%;
+    }
+    .AreaInput{
+        width: 90%;
+    }
+    .ButtonContact{
+        margin-top: 40px;
+        margin-left: 60%;
+    }
+    .ButtonContactWait{
+        margin-top: 40px;
+        margin-left: 60%;
+    }
+}
+@media (min-width: 730px) and (max-width: 1000px) {
+    .ButtonContact{
+        margin-top: 40px;
+        margin-left: 70%;
+    }
+    .ButtonContactWait{
+        margin-top: 40px;
+        margin-left: 70%;
     }
 }
