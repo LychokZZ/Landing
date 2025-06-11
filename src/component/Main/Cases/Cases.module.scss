@@ -121,38 +121,51 @@
     height: auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 720px) {
+@media (max-width: 750px) {
+    .CaseTitle{
+        font-size: 5vw
+    }
+    .CaseStack{
+        margin-bottom: 20px;
+        font-size: 3vw;
+        color: $AnyText;
+    }
     .CasesContainer{
         flex-direction: column;
     }
     .CaseTextContainer{
         width: 80vw;
         padding: 0px;
+        justify-content: flex-start;
+        margin-top: 35%;
     }
     .CaseItemVisible{
         flex-direction: column;
+        position: relative;
+        margin-top: 17vh;
     }
     .PrevButton{
         position: absolute;
         width: 30vw;
         height: 5vh;
         margin-left: -40%;
-        margin-top: 155%;
-        
+        margin-top: 100%;
+        border-radius: 10px;
     }
     .NextButton{
         position: absolute;
         width: 30vw;
         height: 5vh;
-        margin-top: 155%;
+        margin-top: 100%;
         margin-left: 40%;
+        border-radius: 10px;
     }
     .ImageCases{
         width: 80vw;
         height: auto;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         margin-top: 20%;
-        margin-bottom: -20%;
+        margin-bottom: -30%;
     }
     
 }
